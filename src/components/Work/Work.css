@@ -1,0 +1,144 @@
+body {
+	counter-reset: itemscounter;
+	overflow-x: hidden;
+}
+
+#work *, #work *::after, #work *::before {
+	box-sizing: border-box;
+}
+
+#work {
+	padding-bottom: 50px;
+}
+
+/*=========================================
+  MENU
+=========================================*/
+
+#work .menu {
+	margin: auto;
+	max-width: 850px;
+	transition: .5s;
+}
+
+#work .menu-item {
+	display: block;
+	color: var(--accent);
+	text-align: center;
+	transition: 1s;
+	margin: 5px 0;
+}
+
+#work .menu-item:hover {
+	text-decoration: none;
+}
+
+#work .menu-item::before {
+	counter-increment: itemscounter;
+	content: counters(itemscounter, "", decimal-leading-zero) "";
+	color: var(--white) !important;
+	font-weight: 700 !important;
+	font-size: 4.9vmin !important;
+	padding-right: .5em;
+	opacity: 0;
+}
+
+#work .menu-item::after {
+	counter-increment: fakecounter;
+	content: counters(fakecounter, "", decimal-leading-zero) "";
+	opacity: 0;
+	padding-left: .5em;
+}
+
+#work .menu-item:hover:before {
+	opacity: 1;
+}
+
+#work .menu-item::before, #work .menu-item::after, #work .menu-item-text {
+	position: relative;
+	width: 100%;
+	color: var(--accent);
+	font-size: 7vmin;
+	font-weight: 600;
+	will-change: transform, opacity;
+}
+
+#work .menu-item-textinner {
+	display: inline-block;
+	transform: skew(0deg);
+	transition-duration: .3s;
+}
+
+#work .menu-item-textinner:hover {
+	-webkit-text-fill-color: var(--black);
+	-webkit-text-stroke-width: 1.5px;
+	-webkit-text-stroke-color: var(--white);
+	transform: skew(-10deg);
+}
+
+#work .menu-item:hover>.menu-item-text {
+	z-index: 1000 !important;
+}
+
+#work .trails-text {
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	will-change: transform, opacity;
+}
+
+/*=========================================
+  HOVER
+=========================================*/
+
+#work .hover-reveal {
+	position: absolute;
+	z-index: 100;
+	width: 300px;
+	height: 200px;
+	top: 0;
+	left: 0;
+	pointer-events: none;
+	opacity: 0;
+	will-change: transform, filter;
+}
+
+#work .hover-reveal-inner {
+	overflow: hidden;
+}
+
+#work .hover-reveal-inner, #work .hover-reveal-img {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+#work .hover-reveal-img {
+	background-size: cover;
+	background-position: 50% 50%;
+}
+
+/*=========================================
+  MEDIA QUIERIES
+=========================================*/
+
+@media screen and (max-width: 1000px) {
+	#work .hover-reveal {
+		display: none;
+	}
+	#work .menu-item::before, #work .menu-item::after {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 450px) {
+	#work .menu-item::before, #work .menu-item::after, #work .menu-item-text {
+		font-size: 5.5vmin;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	#work .menu-item::before, #work .menu-item::after, #work .menu-item-text {
+		font-size: 5.5vmin;
+	}
+}
