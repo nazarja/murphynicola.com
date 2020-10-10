@@ -26,7 +26,7 @@ const About = ({ data }) => {
         TweenMax.fromTo(arrowRef.current, .5, { opacity: 0 }, { opacity: 1, delay: 3 });
 
         const text = new SplitTextJS(bodyRef.current);
-        text.chars.forEach((char, i) => {
+        text.words.forEach((char, i) => {
             TweenMax.from(char, 1.8, {
                 opacity: 0,
                 x: random(-500, 500),
