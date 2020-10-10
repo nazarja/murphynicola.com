@@ -94,7 +94,7 @@ export default ({ color }) => {
                     <nav ref={sidebarNavRef} className="sidebarNav">
                         <div className="sidebar-top">
                             <div className="tagline">
-                                Nicola Murphy
+                            <Link to="/">Nicola Murphy</Link>
                             </div>
                             <div ref={navLinksRef} className="links-wrapper">
                                 {renderLinks()}

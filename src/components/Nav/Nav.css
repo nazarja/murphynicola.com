@@ -271,7 +271,13 @@
     top: 10vh;
     left: 10%;
     color: var(--white);
+    
+}
+
+#nav #mobile .sidebarNav .tagline a {
+    color: var(--white);
     font-weight: 200;
+    font-size: 1em;
     letter-spacing: 1px;
 }
 
