@@ -9,7 +9,6 @@ export default class Cursor extends Component {
         hide: false,
         hover: false,
         click: false,
-        path: ['/login', '/admin'].includes(this.props.location.pathname)
     };
 
     componentDidMount = () => {
@@ -56,7 +55,10 @@ export default class Cursor extends Component {
     );
 
     render() {
-        return <div className={this.cursorClasses()} />;
+        const path = this.props.location.pathname;
+        return ['/admin', '/login'].includes(path)
+        ? null
+        : <div className={this.cursorClasses()} />;
     };
 };
 

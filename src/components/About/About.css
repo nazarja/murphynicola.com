@@ -84,6 +84,10 @@
     display: none;
 }
 
+#about #profile figure {
+    top: 50%;
+}
+
 #about #profile img {
     max-height: 40vh;
     max-width: auto;

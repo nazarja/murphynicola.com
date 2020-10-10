@@ -25,5 +25,5 @@
     -webkit-text-fill-color: var(--white);
     -webkit-text-stroke-color: var(--black);
     -webkit-text-stroke-width: 1.5px;
-    font-size: 20vmax;
+    font-size: 10vmax;
 }

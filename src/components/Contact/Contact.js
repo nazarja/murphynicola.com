@@ -85,7 +85,6 @@ export default () => {
                     <span>Say </span>
                     <span>Hey</span>
                     <span>.</span>
-                    {/* {'Say Hey .'.split(' ').map(item => <span>{item}</span>)} */}
                 </h1>
                 <div id="details" ref={detailsRef}>
                     <a
@@ -94,7 +93,7 @@ export default () => {
                     > nicolamurphy321<span className="at" data-hover>(at)</span>gmail.com
                     </a>
                     <a
-                        href="phone:+4917673237693"
+                        href="tel:+4917673237693"
                         rel="noopener noreferrer"
                     > Tel: +49 176 73237693
                     </a>

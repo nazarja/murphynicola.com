@@ -334,10 +334,16 @@
 #nav #mobile .extra-links .link-item a {
     color: var(--white);
     transition: .3s;
+    padding: 0 3px 0 0;
 }
 
 #nav #mobile .extra-links .link-item a:hover {
     color: var(--darkaccent)
+}
+
+#nav .fab {
+    display: inline-block;
+    font-size: .8em;
 }
 
 /*====================================
@@ -367,6 +373,23 @@
 
 @media screen and (max-height: 500px) {
     .sidebarNav .links-wrapper .nav-link {
-        font-size: 1.5em;
+        font-size: 1em;
+    }
+
+    #nav #mobile .sidebarNav .links-wrapper .nav-link {
+        font-size: 1.1em;
+    }
+
+    #nav #mobile .sidebarNav .links-wrapper {
+        margin-top: 20px;
+    }
+
+    #nav #mobile .sidebarNav .nav-link .underline {
+        top: 19px;
+        width: 25%;
+    }
+
+    #nav .fab {
+        font-size: .8em;
     }
 }

@@ -102,7 +102,7 @@
 
 @media screen and (max-height: 500px) and (max-width: 900px) {
     #contact {
-        margin-top: 50vh;
+        margin-top: 50px;
     }
     #contact h1 {
         font-size: 9vmin !important;

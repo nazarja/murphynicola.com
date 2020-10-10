@@ -70,7 +70,7 @@ const About = ({ data }) => {
                         </div>
                     </div>
                     <div ref={profileRef} id="profile" onClick={closeProfile}>
-                        <figure ref={figureRef} className="uk-position-center">
+                        <figure ref={figureRef} className="profile-figure uk-position-center">
                             <img src={data.imageURL} alt="Nicola Murphy, Graphic Designer" />
                             <figcaption>Nicola Murphy</figcaption>
                             <figcaption>Graphic Designer</figcaption>
