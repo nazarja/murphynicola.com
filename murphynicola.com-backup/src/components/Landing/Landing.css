@@ -53,7 +53,7 @@
     width: 100vw;
     position: absolute;
     color: var(--white);
-    font-size: 3.5vmax;
+    font-size: 4vmax;
     font-weight: 900;
     text-transform: uppercase;
     text-align: center;
@@ -84,7 +84,7 @@
         top: -10.25vh;
     }
     #landing .text-slide {
-        font-size: 4.5vmax;
+        font-size: 5vmax;
     }
     #landing .text-container {
         height: 80px;
@@ -96,7 +96,7 @@
         top: -10.5vh;
     }
     #landing .text-slide {
-        font-size: 5vmax;
+        font-size: 5.5vmax;
     }
     #landing .text-container {
         height: 90px;
@@ -145,6 +145,6 @@
         height: 35vh;
     }
     #landing .text-slide {
-        font-size: 4vmax;
+        font-size: 5vmax;
     }
 }

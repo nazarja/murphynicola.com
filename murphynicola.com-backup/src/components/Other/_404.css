@@ -1,0 +1,50 @@
+#_404 {
+    max-height: 60vh;
+    max-width: 80vw;
+}
+
+#_404 ._404-header {
+    max-height: 50%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 5%;
+}
+
+#_404 ._404-header span {
+    font-size: 5em;
+    display: inline-block;
+}
+
+#_404 button {
+    margin-top: 20px;
+}
+
+@media screen and (max-height: 500px) {
+    #_404 * {
+        text-align: center;
+    }
+    #_404 ._404-eye span {
+        font-size: 2em;
+    }
+    #_404 h1 {
+        font-size: 1.3em;
+    }
+    #_404 button {
+        margin-top: 5px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #_404 * {
+        text-align: center;
+    }
+    #_404 ._404-eye span {
+        font-size: 2em;
+    }
+    #_404 h1 {
+        font-size: 1.3em;
+    }
+    #_404 button {
+        margin-top: 5px;
+    }
+}

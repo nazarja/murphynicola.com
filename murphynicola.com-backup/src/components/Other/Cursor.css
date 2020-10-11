@@ -1,0 +1,35 @@
+.cursor {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 1000;
+    background-color: var(--white);
+    opacity: 1;
+    mix-blend-mode: difference;
+    transition: all .3s ease;
+    pointer-events: none;
+    transition-property: opacity, background-color, transform, mix-blend-mode;
+}
+
+.cursor-hide {
+    opacity: 0;
+}
+
+.cursor-click {
+    transition: all .2s ease;
+    transform: translate(-50%, -50%) scale(0.7);
+}
+
+.cursor-hover {
+    transform: translate(-50%, -50%) scale(2.5);
+    background-color: var(--white);
+}
+
+@media screen and (hover: none) {
+    .cursor {
+        display: none;
+    }
+}

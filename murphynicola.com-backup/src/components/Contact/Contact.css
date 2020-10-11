@@ -1,0 +1,122 @@
+#contact {
+    text-align: center;
+    height: 80vh;
+    width: 80vw;
+}
+
+#contact h1 {
+    position: relative;
+    font-size: 1.8rem;
+    padding: 10% 0;
+}
+
+#contact h1 span {
+    opacity: 0;
+}
+
+#contact #details, #contact #social {
+    padding: 5% 0;
+    opacity: 0;
+}
+
+#contact #details a {
+    display: block;
+    color: var(--black);
+    font-weight: 100;
+    font-size: 5vmin;
+    margin: 5% auto;
+    text-decoration: none;
+}
+
+#contact #details a:hover,
+#contact #details a:hover > .at {
+    text-decoration: line-through;
+    text-decoration-color: var(--black);
+}
+
+#contact #details .at {
+    color: #555;
+}
+
+#contact #social li {
+    display: inline-block;
+    margin: auto 10px;
+}
+
+#contact #social a {
+    display: inline-block;
+    margin: auto 10px;
+    color: var(--black);
+}
+
+#contact #social .seperator::before {
+    content: "/"
+}
+
+#contact a span {
+    display: inline-block;
+}
+
+/*=========================================
+  EFFECTS
+=========================================*/
+
+#contact .trails-reveal {
+    height: 20vh;
+    width: 100vw;
+    background: #ddd;
+    z-index: 20000;
+    position: relative;
+}
+
+/*=========================================
+  MEDIA QUIERIES
+=========================================*/
+
+@media screen and (max-width: 500px) {
+    #contact #social .seperator::before {
+        content: "-"
+    }
+    #contact #social li {
+        display: block;
+    }
+}
+
+@media screen and (max-height: 400px) {
+    #contact h1 {
+        padding: 0;
+    }
+    #contact #details, #contact #social {
+        padding: 0;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    #contact h1 {
+        font-size: 5vmin !important;
+    }
+    #contact #details a {
+        font-size: 3.5vmin;
+    }
+}
+
+@media screen and (max-height: 500px) and (max-width: 900px) {
+    #contact {
+        margin-top: 50px;
+    }
+    #contact h1 {
+        font-size: 9vmin !important;
+        margin-top: 0%;
+        padding: 0;
+    }
+    #contact #details a {
+        font-size: 6vmin;
+        margin: 15px;
+    }
+    #contact #details {
+        padding: 3% 0 .5% 0;
+    }
+    #contact #social {
+        padding: 0;
+    }
+}
